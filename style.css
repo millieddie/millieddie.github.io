@@ -1,0 +1,236 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+  }
+
+
+
+/*--------------------------------
+wrapper
+--------------------------------*/
+#wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*--------------------------------
+header
+--------------------------------*/
+header{
+	width: 940px;
+}
+h1{
+	float: left;
+}
+.tel{
+    float: left;
+    margin-left: 60px;
+    padding-top: 5px;
+}
+.info{
+    float: right;
+}
+
+/*--------------------------------
+index
+--------------------------------*/
+#index{
+    clear: both;
+    color: #049f40;
+}
+#index p{
+    float: left;
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 1.5px #049f40 solid;
+}
+
+#index p:last-child
+{
+    border: none;
+}
+/*--------------------------------
+main_visual
+--------------------------------*/
+#main_visual{
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/*--------------------------------
+main_info
+--------------------------------*/
+#main_info{
+    padding-bottom: 30px;
+}
+h2{
+    border-left: 5px #049f40 solid;
+    padding-left: 5px;
+}
+.explain{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.students{
+    float: left;
+    padding-left: 50px;
+}
+.foreigners{
+    float: right;
+    padding-right: 50px;
+}
+/*--------------------------------
+IT
+--------------------------------*/
+#it{
+    clear: both;
+    float: left;
+    padding-top: 15px;
+    padding-left: 40px;
+    width: 430px;
+}
+
+.it_college{
+    font-weight:bold;
+    border-left: 5px #00008b solid;
+    background-color: #87cefa;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+    
+    
+
+.ul_it {
+    list-style: none;
+}   
+.ul_it li{
+    border-bottom: 2px #00008b solid;
+	line-height: 1.6em;
+	list-style-image: url("images/icon.png") ;
+    list-style-position: outside;
+    background-size: 20px auto ;
+}
+
+
+/*--------------------------------
+business
+--------------------------------*/
+#business{
+    float: right;
+    padding-top: 15px;
+    width: 430px;
+    
+}
+
+.b_college{ 
+    font-weight:bold;
+    border-left: 5px #dc143c solid;
+    background-color: #ffb6c1;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.ul_business {
+    list-style: none;
+    padding-left: 10px;
+}
+.ul_business li{
+    border-bottom: 2px #dc143c solid;
+	line-height: 1.6em;
+	list-style-image: url("images/icon.png") ;
+    list-style-position: outside;
+}
+
+/*--------------------------------
+topics
+--------------------------------*/
+#topics{
+    clear: both;
+    float: left;
+    padding-top: 50px;
+
+}
+
+h3{
+    padding-bottom: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 1%;
+}
+
+table td {
+    border: solid 1px black;
+    padding: 1%;
+}
+
+.event{
+    width: 400px;
+}
+
+.date {
+    background: #e2e2e2;
+    width: 100px;
+    text-align: center;
+    
+}
+
+/*--------------------------------
+advert
+--------------------------------*/
+#advert{
+    padding-top: 50px;
+    padding-right: 10px;
+    float: right;
+}
+
+
+/*--------------------------------
+footer
+--------------------------------*/
+footer{
+    clear: both;
+	background: #049f40;
+    text-align: center;
+	color: #eee;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+    position: relative;
+}
+div .footer_main{
+    width: 940px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+h4{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    float:left
+}
+
+.school_info li{
+    clear: both;
+    padding-bottom: 5px;
+    float:left;
+    list-style: none;
+}
+
+h5{
+    padding-left: 770px;
+    top: 5px;
+    position: absolute;
+}
+
+small{
+    clear: both;
+    text-align: center;
+    display: block;
+}
