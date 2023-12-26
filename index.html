@@ -1,108 +1,202 @@
-<!DOCTYPE HTML>
-<html lang="ja">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="文章を書く場所">
-<title>HTML/CSS総合課題</title>
-<link rel="stylesheet" href="normalize.css">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーTARO YAMADA ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='TARO YAMADAのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="TARO YAMADAのポートフォリオサイトです" />
+  <title>TARO YAMADA ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
 </head>
 
 <body>
-<div id="wrapper">
-    <header>
-        <h1><img src="images/logo.png" alt="ロゴ"></h1>
-        <p class = "tel"><img src="images/tel.png" alt="電話番号"></p>
-        <p class = "info"><img src="images/info.png" alt="学校情報公開"></p>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">TARO YAMADA</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    
-    <section id = "index">
-        <p>学校紹介</p>
-        <p>学科紹介</p>
-        <p>産学連携</p>
-        <p>学校へのアクセス</p>
-        <p>お問い合せ</p>
-    </section>
+    <!-- /header -->
 
-    <section id = "main_visual">
-        <p><img src="images/slide01.png" alt="メインビジュアル"></p>
-    </section>
+    <main class="content">
 
-    <section id = "main_info">
-        <h2>入学情報サイト</h2>
-        <p class="explain">学校紹介動画、学科紹介、オープンキャンパス申込、Web出願のご案内</p>
-        <p class="students"><img src="images/type01.png" alt="高校生・既卒者・社会人"></p>
-        <p class="foreigners"><img src="images/type02.png" alt="留学生"></p>
-    </section>
-
-    <section id = "it">
-            <p class="it_college">ITカレッジ</p>
-                <ul class="ul_it">
-                <li>アプリ・Web制作学科</li>
-                <li>AIデザイン学科</li>
-                <li>ゲームクリエイター学科</li>
-                <li>電子機器組込みソフトウェア学科</li>
-                </ul>
-    </section>
-
-    <section id = "business">
-        <p class="b_college">ビジネスカレッジ</p>
-            <ul class ="ul_business">
-                <li>ビジネス起業経営学科</li>
-                <li>営業マネジメント学科</li>
-                <li>国際観光・通訳ガイド学科</li>
-            </ul>
-    </section>
-
-    <section id = "topics">
-        <h3>TOPICS</h3>
-        <table>
-            <tr>
-                <td class = "date">2023.09.22</td>
-                <td class = "event">東京ゲームショウでブース展示中</td>
-            </tr>
-            <tr>
-                <td class = "date">2023.09.01</td>
-                <td class = "event">日本留学AWARDS 2023 入賞</td>
-            </tr>
-            <tr>
-                <td class = "date">2023.04.07</td>
-                <td class = "event">令和５年度入学式挙行</td>
-            </tr>
-            <tr>
-                <td class = "date">2023.03.17</td>
-                <td class = "event">「ALGORI」決勝大会出場</td>
-            </tr>
-            <tr>
-                <td class = "date">2023.03.13</td>
-                <td class = "event">第11回 卒業証書授与式挙行</td>
-            </tr>
-        </table>      
-    </section>				
-
-
-    <section id = "advert">
-        <p><img src="images/banner01.png" alt="Facebook"></p>
-        <p><img src="images/banner02.png" alt="資料請求"></p>
-        <p><img src="images/banner03.png" alt="アクセス"></p>
-        <p><img src="images/banner04.png" alt="企業の方へ"></p>
-        <p><img src="images/banner05.png" alt="日本留学AWARDS"></p>
-    </section>
-
-    <footer>
-        <div class="footer_main">
-            <h4>学校法人 中央情報学園</h4>
-            <ul class = "school_info">
-            <li>早稲田文理専門学校</li>
-            <li>〒171-0033 東京都豊島区高田2-6-7</li>
-            <li>電話:03-5960-2611</li>
-            <li>FAX:03-5960-2622</li>
-            </ul>
-            <h5>姉妹校  中央情報専門学校</h5>
-            <small>Copyright Waseda-Bunri College of Arts and Sciences All Rights Reserved.</small>   
+      <!-- mv -->
+      <div class="mv">
+        <div class="mv-container">
+          <p class="mv-title">TARO YAMADA</p>
+          <p class="mv-subtitle">PORTFOLIO</p>
+          <p class="mv-text">
+            ユーザーとお客様が心から満足できる<br class="sp-only">サイトをお作りいたします。<br>
+            デザインとコーディングは<br class="sp-only">おまかせください。<br>
+          </p>
         </div>
-        </footer>
+      </div>
+      <!-- /mv -->
 
-</div>
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="container">
+          <h2 class="title">WORKS</h2>
+          <div class="works-list">
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-sample-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Banner Design</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Banner Design</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /works -->
+
+      <!-- skill -->
+      <section class="skill section" id="skill">
+        <div class="container">
+          <h2 class="title">SKILL</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">HTML5/CSS3</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">WordPress</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Photoshop</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Illustrator</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">XD</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="title">ABOUT</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="img/profile.jpg" alt="">
+            </p>
+            <div class="profile-body">
+              <p>
+                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+              </p>
+              <p>
+                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /about -->
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="title">CONTACT</h2>
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
+          </p>
+          <div class="contact-list">
+            <a class="contact-item" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+            <a class="contact-item" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <span class="contact-item">xxxxxx@gmail.com</span>
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;TARO YAMADA</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
