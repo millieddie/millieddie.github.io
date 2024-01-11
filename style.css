@@ -581,6 +581,35 @@ li.list4{
     display: block;
   }
 
+
+  a.link_change_colour{
+  color: inherit;
+  text-decoration: none;
+  }
+
+  a.link_change_colour {
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  }
+
+  a.link_change_colour :hover {
+  background-size: 0 3px, 100% 3px;
+  }
+
   /* 見出し */
   .title {
     font-size: 26px;
