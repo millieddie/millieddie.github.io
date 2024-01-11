@@ -456,7 +456,7 @@ li.list4{
   text-align: center;
 }
 
-.contact-item:not(:last-child) {
+.badge-base LI-profile-badge:not(:last-child) {
   margin-right: 10px;
 }
 
