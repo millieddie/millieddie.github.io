@@ -456,9 +456,7 @@ li.list4{
   text-align: center;
 }
 
-.badge-base LI-profile-badge: {
-  display: grid;
-  grid-template-columns: 1fr;
+.contact-list {
   text-align: center;
 }
 
