@@ -458,6 +458,8 @@ li.list4{
 
 .badge-base LI-profile-badge {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .contact-text {
