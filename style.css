@@ -459,6 +459,7 @@ li.list4{
 .badge-base LI-profile-badge {
   text-align: center;
   display: flex;
+  margin: auto;
 }
 
 .contact-text {
