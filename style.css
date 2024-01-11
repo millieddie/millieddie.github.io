@@ -44,7 +44,7 @@ img {
 }
 
 .container {
-  max-width: 1340px;
+  --base-max-width: 1340px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -171,6 +171,66 @@ img {
   line-height: 1.8;
 }
 
+/*スクロールダウン全体の場所*/
+.scrolldown4{
+  /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  bottom:1%;
+  right:50%;
+  /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+   100%{bottom:1%;}
+}
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+  /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:10px;
+  /*テキストの形状*/
+  color: #333;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  /*矢印の形状*/
+  width: 1px;
+  height: 20px;
+  background: #333;
+  transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+  content:"";
+  /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+  /*矢印の形状*/
+  width:1px;
+  height: 50px;
+  background:#333;
+}
+
+
 /*--------------------------------
  Works
 ---------------------------------*/
@@ -213,67 +273,179 @@ img {
 /*--------------------------------
  Skill
 ---------------------------------*/
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: -50px;
+.skill-parent {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 150px;
+  row-gap: 70px;
+  column-gap: 0px;
+  text-align: center;
 }
 
-.skill-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 48%;
-  margin-bottom: 50px;
+/*-----DESIGN/PROGRAMMING------*/
+
+.skill-child {
+  position: relative;
+  padding:0.30em 1em;
 }
 
-.skill-img {
-  width: 60px;
-  height: auto;
-  margin-right: 20px;
+.skill-child:before,.skill-child:after{ 
+  content:'';
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+}
+.skill-child:before{
+  border-left: solid 1px;
+  border-top: solid 1px;
+  top:0;
+  left: 30px;
+}
+.skill-child:after{
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  bottom:-10px;
+  right: 30px;
 }
 
-.skill-body {
-  flex: 1;
+/*-----------LANGUAGE-------------*/
+
+.skill-child2 {
+  position: relative;
+  padding:0.30em 1em;
 }
 
-.skill-name {
+.skill-child2:before,.skill-child2:after{ 
+  content:'';
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+}
+.skill-child2:before{
+  border-left: solid 1px;
+  border-top: solid 1px;
+  top:0;
+  left: 30px;
+}
+.skill-child2:after{
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  bottom:-120px;
+  right: 30px;
+}
+
+/*-----------OTHER APP-------------*/
+.skill-child3 {
+  position: relative;
+  padding:0.30em 1em;
+}
+
+.skill-child3:before,.skill-child3:after{ 
+  content:'';
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+}
+.skill-child3:before{
+  border-left: solid 1px;
+  border-top: solid 1px;
+  top:0;
+  left: 30px;
+}
+.skill-child3:after{
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  bottom:-150px;
+  right: 30px;
+}
+.skill-img{
+  margin-top: 10px;
   margin-bottom: 10px;
 }
-
+/*---------LIST------------------*/
 .skill-text {
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 1.8;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.skill-info{
+  font-size: 13px;
+  list-style: none;
+  text-align: center;
+  column-count: 3;
+  justify-content: space-between;
 }
 
+.skill-info2{
+  font-size: 13px;
+  list-style: none;
+  text-align: center;
+  margin-right: 20px;
+  column-count: 2;
+  justify-content: space-between;
+}
+
+li.list{
+  margin-left: 35px;
+  padding-bottom: 2px;
+}
+
+li.list1{
+  padding-bottom: 2px;
+}
+
+li.list2{
+  margin-right: 80px;
+}
+
+li.list3{
+  margin-left: 70px;
+}
+li.list4{
+  margin-right: 70px;
+}
 /*--------------------------------
  About
 ---------------------------------*/
+
 .profile {
+  clear: both;
   display: flex;
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
 }
 .profile-img {
+  clear: both;
   width: 20%;
   margin-right: 30px;
   border-radius: 50%;
 }
 .profile-img img {
+  clear: both;
   border-radius: 50%;
 }
 .profile-body {
+  clear: both;
   flex: 1;
 }
 
 .profile-body p {
+  clear: both;
   font-size: 15px;
   line-height: 1.8;
 }
 
 .profile-body p:not(:last-child) {
+  clear: both;
   margin-bottom: 30px;
 }
 
@@ -294,17 +466,22 @@ img {
 /*--------------------------------
  ページトップ
 ---------------------------------*/
-.page-top {
-  font-weight: bold;
-  padding: 10px;
+#page-top a{
+  background:#4c4c4c;
+  color:#fff;
   cursor: pointer;
   text-align: center;
-  background-color: #4c4c4c;
+  display: block;
+  text-decoration: none;
+  padding:10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  transition: all 0.3s;
 }
 
-.page-top .material-icons-outlined {
-  vertical-align: bottom;
-  color: #fff;
+#page-top a:hover{
+  background: #777;
 }
 
 /*--------------------------------
@@ -345,6 +522,20 @@ img {
   margin-bottom: 80px;
 }
 
+.article-topics2{
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #f7f7f7;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding-right: calc(50vw - 50%);
+  padding-left: calc(50vw - 50%);
+}
+
+.article-topics1{
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
 .article-body h3 {
   position: relative;
   font-size: 18px;
@@ -486,18 +677,12 @@ img {
     margin-bottom: 0;
   }
 
-  .skill-item {
-    width: 100%;
-    margin-bottom: 35px;
-  }
+
 
   .skill-item:last-child {
     margin-bottom: 0;
   }
 
-  .skill-name {
-    margin-bottom: 5px;
-  }
 
   .skill-text {
     font-size: 13px;
