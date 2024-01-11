@@ -456,15 +456,11 @@ li.list4{
   text-align: center;
 }
 
-.badge-base LI-profile-badge {
-  text-align: center;
+.linkedin_contact {
   display: flex;
-  margin-left: 300px;
+  margin-left: 425px;
 }
 
-.contact-text {
-  margin-top: 10px;
-}
 /*--------------------------------
  ページトップ
 ---------------------------------*/
