@@ -407,9 +407,11 @@ li.list2{
 }
 
 li.list3{
+  padding-bottom: 2px;
   margin-left: 70px;
 }
 li.list4{
+  padding-bottom: 2px;
   margin-right: 70px;
 }
 /*--------------------------------
