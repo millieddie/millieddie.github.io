@@ -422,18 +422,18 @@ Schoolのcss
 ===================================*/
 
 /*画像の横幅を100%にしてレスポンシブ化*/
-img_school{
+img{
 	width: 100%;
 	height: auto;
 	vertical-align: bottom;/*画像の下にできる余白を削除*/
 }
 
 /*メイン画像下に余白をつける*/
-.gallery_school{
+.gallery{
 	margin:0 0 5px 0;
 }
 
-.gallery_school li{
+.gallery li{
 list-style:none;
 }
 /*矢印の設定*/
