@@ -768,14 +768,6 @@ li.list4{
 /*==================================================
 Schoolのcss
 ===================================*/
-
-/*画像の横幅を100%にしてレスポンシブ化*/
-.img_school{
-	width: 100%;
-	height: auto;
-	vertical-align: bottom;/*画像の下にできる余白を削除*/
-}
-
 /*メイン画像下に余白をつける*/
 .gallery_school{
 	margin:0 0 5px 0;
@@ -785,6 +777,14 @@ Schoolのcss
 list-style:none;
 }
 /*矢印の設定*/
+
+/*画像の横幅を100%にしてレスポンシブ化*/
+.gallery_school li img{
+width: 100%;
+	height: auto;
+	vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+
 
 /*戻る、次へ矢印の位置*/
 .slick-prev, 
