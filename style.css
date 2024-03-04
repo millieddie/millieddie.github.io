@@ -770,7 +770,7 @@ Schoolのcss
 ===================================*/
 
 /*画像の横幅を100%にしてレスポンシブ化*/
-.img_school{
+img_school{
 	width: 100%;
 	height: auto;
 	vertical-align: bottom;/*画像の下にできる余白を削除*/
