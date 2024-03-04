@@ -26,7 +26,7 @@ $(function () {
   });
 
   //上部画像の設定
-$('.gallery_school').slick({
+$('.gallery').slick({
 	infinite: true, //スライドをループさせるかどうか。初期値はtrue。
 	fade: true, //フェードの有効化
 	arrows: true,//左右の矢印あり
