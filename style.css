@@ -367,8 +367,8 @@ img {
 .skill-img{
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 300px;
-  height: 200px;
+  max-width: 10%;
+  height: auto;
 }
 /*---------LIST------------------*/
 .skill-text {
