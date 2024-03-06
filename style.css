@@ -18,6 +18,13 @@ img {
   border-style: none;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
 
 
 .pc-only {
